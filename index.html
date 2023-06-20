@@ -40,6 +40,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
         <address class="header-address">
           <ul class="address list">
             <li>
@@ -55,10 +60,83 @@
           </ul>
         </address>
       </div>
+      <!-- --------- -->
+      <div class="mobile-menu js-menu-container">
+        <div>
+          <button type="button" class="mobile-close-btn js-close-menu">
+            <svg class="mobile-svg-close-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-modal list">
+            <li class="modal-menu-item">
+              <a class="mobile-menu-item link" href="./index.html">Studio</a>
+            </li>
+            <li class="modal-menu-item">
+              <a class="mobile-menu-item link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="modal-menu-item">
+              <a class="mobile-menu-item link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-menu-address">
+            <ul class="mobile-menu-address list">
+              <li class="mobile-menu-address-soc">
+                <a class="mobile-menu-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-address-soc">
+                <a
+                  class="mobile-menu-mail-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mob-social-list list">
+            <li class="mob-social-list-item">
+              <a href="" class="mob-social-list-link">
+                <svg class="mob-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-list-item">
+              <a href="" class="mob-social-list-link">
+                <svg class="mob-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-list-item">
+              <a href="" class="mob-social-list-link">
+                <svg class="mob-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-list-item">
+              <a href="" class="mob-social-list-link">
+                <svg class="mob-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero container">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
@@ -105,28 +183,28 @@
           <ul class="activities-list list">
             <li class="active-list">
               <h3 class="activities-subtitle subtitle">Strategy</h3>
-              <p class="paragrapth">
+              <p class="activities-paragrapth paragrapth">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
             <li class="active-list">
               <h3 class="activities-subtitle subtitle">Punctuality</h3>
-              <p class="paragrapth">
+              <p class="activities-paragrapth paragrapth">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li class="active-list">
               <h3 class="activities-subtitle subtitle">Diligence</h3>
-              <p class="paragrapth">
+              <p class="activities-paragrapth paragrapth">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
             <li class="active-list">
               <h3 class="activities-subtitle subtitle">Technologies</h3>
-              <p class="paragrapth">
+              <p class="activities-paragrapth paragrapth">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -141,7 +219,8 @@
           <ul class="doing-list list">
             <li class="image">
               <img
-                src="./images/img_1.jpg"
+                srcset="./images/doing-one2x.jpg 2x"
+                src="./images/doing-one.jpg"
                 alt="computer monitor"
                 width="360"
                 height="300"
@@ -149,7 +228,8 @@
             </li>
             <li class="image">
               <img
-                src="./images/img_2.jpg"
+                srcset="./images/doing-two2x.jpg 2x"
+                src="./images/doing-two.jpg"
                 alt="duplicate phone screens"
                 width="360"
                 height="300"
@@ -157,7 +237,8 @@
             </li>
             <li class="image">
               <img
-                src="./images/img_3.jpg"
+                srcset="./images/doing-three2x.jpg 2x"
+                src="./images/doing-three.jpg"
                 alt="sync your phone and computer"
                 width="360"
                 height="300"
@@ -168,11 +249,12 @@
       </section>
       <!-- Our Team -->
       <section class="our-team">
-        <div class="container">
+        <div class="team-container container">
           <h2 class="main-title doing-title">Our Team</h2>
           <ul class="team-list list">
             <li class="list-team team-background">
               <img
+                srcset="./images/master12x.jpg 2x"
                 src="./images/master1.jpg"
                 alt="photo man"
                 width="264"
@@ -216,6 +298,7 @@
             </li>
             <li class="list-team team-background">
               <img
+                srcset="./images/master22x.jpg 2x"
                 src="./images/master2.jpg"
                 alt="photo man"
                 width="264"
@@ -259,6 +342,7 @@
             </li>
             <li class="list-team team-background">
               <img
+                srcset="./images/master32x.jpg 2x"
                 src="./images/master3.jpg"
                 alt="photo woman"
                 width="264"
@@ -302,6 +386,7 @@
             </li>
             <li class="list-team team-background">
               <img
+                srcset="./images/master42x.jpg 2x"
                 src="./images/master4.jpg"
                 alt="photo man"
                 width="264"
@@ -558,5 +643,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
